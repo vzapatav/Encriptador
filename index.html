@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- RESETCSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- mipropioestilo -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- iconos https://fontawesome.com/ -->
+    <script
+      src="https://kit.fontawesome.com/756f501363.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- imgMiLogo -->
+      <img src="./assets/img/Logo.png" alt="Logo Alura" />
+    </header>
+    <!-- Cuerpo  -->
+    <main>
+      <!-- deseencriptador -->
+      <section class="contenedores grid-item-1">
+        <!-- textoDeEntrada -->
+        <textarea
+          id="textoEntrada"
+          placeholder="Escribe tu texto aquí"
+        ></textarea>
+        <!-- advertencia -->
+        <div class="advertencia">
+          <p>
+            <span><i class="fa-sharp fa-solid fa-circle-exclamation"></i></span>
+            Solo letras minúsculas y sin acentos
+          </p>
+        </div>
+        <!-- contenedorDeBotones -->
+        <div id="cajaBotones">
+          <button id="btn-encriptar" class="botones" onclick="btnEncriptar()">Encriptar</button>
+          <button id="btn-desencriptar" class="botones" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+      </section>
+      <!-- encriptador -->
+      <section class="contenedores grid-item-2">
+        <!-- textoEncriptado -->
+        <textarea id="textoSalida" readonly></textarea>
+        <!-- textos -->
+        <div class="textos">
+          <h3>Ningún mensaje fue encontrado</h3>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <!-- botonCopiar -->
+        <button id="btn-copiar" class="botones" onclick="copiar()">Copiar</button>
+      </section>
+    </main>
+
+    <!-- LLama al archivo de JavaScript     -->
+    <script src="../EncriptadorNuevo/assets/js/scripts.js"></script>
+
+    <!-- Footer -->
+    <footer>
+      <!-- redesSociales -->
+      <h1>&copy Copyrigth</h1>
+      <h2>Redes Sociales</h2>
+      <a href="https://github.com/vzapatav"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/victor-zapata-valenzuela/"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
